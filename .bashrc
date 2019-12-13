@@ -14,5 +14,7 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-
 # Put your fun stuff here.
+
+alias la='ls -ahl'
+alias v='${EDITOR}'
