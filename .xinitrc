@@ -1,4 +1,5 @@
 #!/bin/sh
+eval "$(dbus-launch --sh-syntax --exit-with-session)"
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -24,6 +25,11 @@ if [ -f "$usermodmap" ]; then
 fi
 
 # start some nice programs
+
+LANG="ja_JP.utf8"
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
 
 if [ -n "`/etc/X11/chooser.sh`" ]; then
  command="`/etc/X11/chooser.sh`"
