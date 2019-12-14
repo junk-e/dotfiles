@@ -12,6 +12,11 @@ if [ -f $HOME/.bash_history ]; then
     rm -f $HOME/.bash_history
 fi
 
+# Disable tig history
+if [ -f $HOME/.tig_history ]; then
+    rm -f $HOME/.tig_history
+fi
+
 export TIGRC_USER='$HOME/.config/tig/tigrc'
 
 # Start X at login
