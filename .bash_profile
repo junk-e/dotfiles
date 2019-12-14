@@ -13,3 +13,8 @@ if [ -f $HOME/.bash_history ]; then
 fi
 
 export TIGRC_USER='$HOME/.config/tig/tigrc'
+
+# Start X at login
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    exec startx;
+fi
