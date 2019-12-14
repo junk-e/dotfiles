@@ -1,0 +1,6 @@
+[user]
+    name  = junk-e
+    email = 47948104+junk-e@users.noreply.github.com
+[core]
+    editor   = vim
+    autoclrf = false
