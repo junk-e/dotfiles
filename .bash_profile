@@ -11,3 +11,5 @@ unset HISTFILE
 if [ -f $HOME/.bash_history ]; then
     rm -f $HOME/.bash_history
 fi
+
+export TIGRC_USER='$HOME/.config/tig/tigrc'
