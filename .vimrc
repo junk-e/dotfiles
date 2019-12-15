@@ -12,3 +12,6 @@ set shiftwidth=0                                " Value to shift when indented (
 set autoindent                                  " Take over the previous indent
 set smartindent                                 " C-like smart indent
 set expandtab                                   " Use space instead of tab
+
+set clipboard&                                  " Set clipboard values to default
+set clipboard^=unnamedplus                      " Enable <C-c><C-v> type clipboard
