@@ -6,5 +6,6 @@ function run {
     fi
 }
 
-#run fcitx
-#run google-chrome-stable
+run fcitx
+run conky
+run google-chrome-stable
