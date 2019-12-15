@@ -5,6 +5,9 @@ set fileencodings=utf-8,ucs-boms,euc-jp,cp932   " Auto detection when reading
 set fileformats=unix,dos,mac                    " Line feed code
 set ambiwidth=double                            " Prevent collapse of ¢¢ and ¡û
 
+set nobackup                                    " Disable backup
+set nowritebackup                               " Disable backup
+
 set number                                      "Show line numbers
 
 set tabstop=4                                   " Recognize 4 spaces as tab
