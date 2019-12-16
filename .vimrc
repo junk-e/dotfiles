@@ -28,6 +28,22 @@ set foldmethod=marker
 set foldlevel=0
 set foldcolumn=3
 
+" Delete unnecessary spaces "{{{
+aug deleteSpaces
+    au!
+    au BufWritePre * call s:delete_space()
+aug END
+
+function! s:delete_space()
+    " Delete last spaces
+    %s/\s\+$//ge
+    " Delete last brank lines
+    while getline('$') == ""
+        $delete _
+    endwhile
+endfunction
+"}}}
+
 " key mappings
 
 nnoremap q <Nop>                                " Disable macros
