@@ -23,6 +23,11 @@ set expandtab                                   " Use space instead of tab
 set clipboard&                                  " Set clipboard values to default
 set clipboard^=unnamedplus                      " Enable <C-c><C-v> type clipboard
 
+" Folding
+set foldmethod=marker
+set foldlevel=0
+set foldcolumn=3
+
 " key mappings
 
 nnoremap q <Nop>                                " Disable macros
