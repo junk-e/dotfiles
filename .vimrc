@@ -22,3 +22,15 @@ set expandtab                                   " Use space instead of tab
 
 set clipboard&                                  " Set clipboard values to default
 set clipboard^=unnamedplus                      " Enable <C-c><C-v> type clipboard
+
+" key mappings
+
+nnoremap q <Nop>                                " Disable macros
+
+nnoremap s <Nop>                                " Disable substitution insert (word)
+nnoremap S <Nop>                                " Disable substitution insert (line)
+
+nnoremap ZX :w<CR>                              " Assign ZX to write in normal mode
+inoremap ZX <ESC>:w<CR>                         " Assign ZX to write in insert mode
+
+nnoremap <silent> <ESC><ESC> :nohl<CR>
