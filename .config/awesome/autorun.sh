@@ -7,5 +7,5 @@ function run {
 }
 
 run fcitx
-run conky
+run conky -c ~/.config/awesome/conky/conky.lua
 run google-chrome-stable
