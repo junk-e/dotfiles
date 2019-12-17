@@ -46,12 +46,17 @@ endfunction
 
 " key mappings
 
-nnoremap q <Nop>                                " Disable macros
+" Disable macros
+nnoremap q <Nop>
 
-nnoremap s <Nop>                                " Disable substitution insert (word)
-nnoremap S <Nop>                                " Disable substitution insert (line)
+" Disable substitution insert (word)
+nnoremap s <Nop>
+" Disable substitution insert (line)
+nnoremap S <Nop>
 
-nnoremap ZX :w<CR>                              " Assign ZX to write in normal mode
-inoremap ZX <ESC>:w<CR>                         " Assign ZX to write in insert mode
+" Assign ZX to write in normal mode
+nnoremap ZX :w<CR>
+" Assign ZX to write in insert mode
+inoremap ZX <ESC>:w<CR>
 
 nnoremap <silent> <ESC><ESC> :nohl<CR>
