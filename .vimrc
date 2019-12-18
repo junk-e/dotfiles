@@ -51,6 +51,11 @@ aug autoCommentOff
     au BufEnter * setl formatoptions-=o
 aug END
 
+" Search / Replace
+set ignorecase                                  " Search case insensitive
+set smartcase                                   " Search case sensitive when entering uppercase
+set gdefault                                    " Assign g option by default at replacement
+
 " key mappings
 
 " Disable macros
