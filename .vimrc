@@ -12,7 +12,7 @@ set swapfile                                    " Enable swap
 set undodir=~/.cache/vim/undo
 set undofile                                    " Enable undo
 
-set number                                      "Show line numbers
+set number                                      " Show line numbers
 
 set tabstop=4                                   " Recognize 4 spaces as tab
 set shiftwidth=0                                " Value to shift when indented (0 = tabstop value)
@@ -57,7 +57,6 @@ set smartcase                                   " Search case sensitive when ent
 set gdefault                                    " Assign g option by default at replacement
 
 " key mappings
-
 " Disable macros
 nnoremap q <Nop>
 
