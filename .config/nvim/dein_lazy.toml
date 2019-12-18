@@ -18,3 +18,17 @@ hook_source = '''
     " Enable at start-up
     call deoplete#enable()
 '''
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = 'neosnippet-snippets'
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
+hook_source = '''
+    " Plugin key-mappings.
+    imap <C-f> <Plug>(neosnippet_expand_or_jump)
+    smap <C-f> <Plug>(neosnippet_expand_or_jump)
+    xmap <C-f> <Plug>(neosnippet_expand_target)
+    " Personal snippets directory
+    let g:neosnippet#snippets_directory = '~/.config/nvim/snippets'
+'''
