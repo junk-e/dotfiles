@@ -44,6 +44,13 @@ function! s:delete_space()
 endfunction
 "}}}
 
+" Auto comment off
+aug autoCommentOff
+    au!
+    au BufEnter * setl formatoptions-=r
+    au BufEnter * setl formatoptions-=o
+aug END
+
 " key mappings
 
 " Disable macros
