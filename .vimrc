@@ -7,9 +7,14 @@ set ambiwidth=double                            " Prevent collapse of ¢¢ and ¡û
 
 set nobackup                                    " Disable backup
 set nowritebackup                               " Disable backup
-set directory=~/.cache/vim/swap
 set swapfile                                    " Enable swap
-set undodir=~/.cache/vim/undo
+if has ('nvim')
+    set directory=~/.cache/nvim/swap            " Swap directory
+    set undodir=~/.cache/nvim/undo              " Undo directory
+else
+    set directory=~/.cache/vim/swap             " Swap directory
+    set undodir=~/.cache/vim/undo               " Undo directory
+endif
 set undofile                                    " Enable undo
 
 set number                                      " Show line numbers
