@@ -56,6 +56,12 @@ set ignorecase                                  " Search case insensitive
 set smartcase                                   " Search case sensitive when entering uppercase
 set gdefault                                    " Assign g option by default at replacement
 
+" Overwriting textwidth (Default : 78)
+aug noWrapping
+    au!
+    au BufEnter * set textwidth=0
+aug END
+
 " key mappings
 " Disable macros
 nnoremap q <Nop>
