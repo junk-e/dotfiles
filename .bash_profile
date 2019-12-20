@@ -1,5 +1,9 @@
 # /etc/skel/.bash_profile
 
+PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/.local/bin
+export PATH
+
 # This file is sourced by bash for login shells.  The following line
 # runs your .bashrc and is recommended by the bash info pages.
 if [[ -f ~/.bashrc ]] ; then
