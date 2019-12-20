@@ -15,6 +15,10 @@ if [[ $- != *i* ]] ; then
 fi
 
 # Put your fun stuff here.
+if type nvim > /dev/null 2>&1; then
+    export EDITOR='nvim'
+    export PAGER='nvimpager'
+fi
 
 alias la='ls -ahl'
 alias v='${EDITOR}'
