@@ -125,6 +125,11 @@ aug noWrapping
     au BufEnter * set textwidth=0
 aug END
 
+" Conceal
+set conceallevel=2                              " Automatically hides stretches of text
+set concealcursor=niv                           " Mode NOT to release conceal: normal,insert,visual
+let g:tex_conceal=''                            " Disable conceal in TeX
+
 " key mappings
 " Disable macros
 nnoremap q <Nop>
