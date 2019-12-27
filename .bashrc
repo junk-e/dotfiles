@@ -39,7 +39,7 @@ alias gri='git rebase -i HEAD~10'
 alias grc='git rebase --continue'
 alias ginit='git init && touch .gitignore && git add .gitignore && git commit -m "[INIT] Initialize repository"'
 
-# Start xonsh
+# Start fish
 if [[ $DISPLAY == ":0" ]]; then
-    exec xonsh;
+    exec fish;
 fi
