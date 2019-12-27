@@ -130,6 +130,10 @@ set conceallevel=2                              " Automatically hides stretches 
 set concealcursor=niv                           " Mode NOT to release conceal: normal,insert,visual
 let g:tex_conceal=''                            " Disable conceal in TeX
 
+" Display invisible characters
+set list
+set listchars=tab:\|-,nbsp:%
+
 " key mappings
 " Disable macros
 nnoremap q <Nop>
