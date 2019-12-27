@@ -15,29 +15,6 @@ if [[ $- != *i* ]] ; then
 fi
 
 # Put your fun stuff here.
-if type nvim > /dev/null 2>&1; then
-    export EDITOR='nvim'
-    export PAGER='nvimpager'
-fi
-
-alias la='ls -ahl'
-alias v='${EDITOR}'
-
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gp='git push'
-alias gb='git branch'
-alias gl='tig'
-alias gco='git checkout'
-alias gcom='git checkout master'
-alias gss='git stash -u'
-alias gsa='git stash apply'
-alias gsd='git stash drop'
-alias gsl='git stash list'
-alias gri='git rebase -i HEAD~10'
-alias grc='git rebase --continue'
-alias ginit='git init && touch .gitignore && git add .gitignore && git commit -m "[INIT] Initialize repository"'
 
 # Start fish
 if [[ $DISPLAY == ":0" ]]; then
