@@ -1,0 +1,64 @@
+snippet     add
+abbr        Add prefix
+options     head
+	[ADD] ${1}
+
+snippet     update
+abbr        Update prefix
+options     head
+	[UPDATE] ${1}
+
+snippet     updateTweak
+abbr        Update prefix (tweak)
+options     head
+	[UPDATE] Tweak ${1}
+
+snippet     fix
+abbr        Fix prefix
+options     head
+	[FIX] ${1}
+
+snippet     remove
+abbr        Remove prefix
+options     head
+	[REMOVE] ${1}
+
+snippet     merge
+abbr        Merge prefix
+options     head
+	[MERGE] branch: ${1}
+
+snippet     rename
+abbr        Rename or move prefix
+options     head
+	[RENAME] ${1} -> ${2}
+
+snippet     perfect
+abbr        Fix by perfectionist
+options     head
+	[FIX] By perfectionist -> ${1}
+
+snippet     dotAdd
+abbr        Add prefix for dotfiles
+options     head
+	[${1}][ADD] ${2}
+
+snippet     dotUpdate
+abbr        Update prefix for dotfiles
+options     head
+	[${1}][UPDATE] ${2}
+
+snippet     dotFix
+abbr        Fix prefix for dotfiles
+options     head
+	[${1}][FIX] ${2}
+
+snippet     dotRemove
+abbr        Remove prefix for dotfiles
+options     head
+	[${1}][REMOVE] ${2}
+
+snippet     dotCrean
+abbr        Crean prefix for dotfiles
+options     head
+	[${1}][CREAN] ${2}
