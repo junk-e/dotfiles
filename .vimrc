@@ -77,6 +77,15 @@ endif
 
 set number                                      " Show line numbers
 
+" relative line numbers
+aug numbertoggle
+    au!
+    au BufEnter,FocusGained,InsertLeave *
+        \ set relativenumber
+    au BufLeave,FocusLost,InsertEnter   *
+        \ set norelativenumber
+aug END
+
 set tabstop=4                                   " Recognize 4 spaces as tab
 set shiftwidth=0                                " Value to shift when indented (0 = tabstop value)
 set autoindent                                  " Take over the previous indent
