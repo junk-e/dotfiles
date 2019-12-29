@@ -91,6 +91,13 @@ set foldmethod=marker
 set foldlevel=0
 set foldcolumn=3
 
+" Storing folds
+aug storing_folds
+  au!
+  au BufWinLeave ?* mkview 1
+  au BufWinEnter ?* silent! loadview 1
+aug END
+
 " Delete unnecessary spaces "{{{
 aug deleteSpaces
     au!
