@@ -1,1 +1,1 @@
-/home/junk/workspace/dotfiles/.vimrc
+../../.vimrc
