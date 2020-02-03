@@ -64,6 +64,7 @@ set undofile                                    " Enable undo
 if has ('nvim')
     set directory=~/.cache/nvim/swap            " Swap directory
     set undodir=~/.cache/nvim/undo              " Undo directory
+    let g:netrw_home='~/.cache/nvim'            " netrw home directory
 else
     set directory=~/.cache/vim/swap             " Swap directory
     if !isdirectory(&directory)
@@ -73,6 +74,7 @@ else
     if !isdirectory(&undodir)
         call mkdir(&undodir, 'p')
     endif
+    let g:netrw_home='~/.cache/vim'             " netrw home directory
 endif
 
 set number                                      " Show line numbers
