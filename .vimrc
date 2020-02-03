@@ -135,11 +135,10 @@ set ignorecase                                  " Search case insensitive
 set smartcase                                   " Search case sensitive when entering uppercase
 set gdefault                                    " Assign g option by default at replacement
 
-" Overwriting textwidth (Default : 78)
-aug noWrapping
-    au!
-    au BufEnter * set textwidth=0
-aug END
+set textwidth=100                               " Overwriting textwidth (Default : 78)
+
+" Call colorcolumn recursively (http://bit.ly/2uZwt2N)
+exe "set cc=" . join(range(101,999), ',')
 
 " Conceal
 set conceallevel=2                              " Automatically hides stretches of text
