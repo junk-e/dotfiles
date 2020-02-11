@@ -2,6 +2,16 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'vim-scripts/autodate.vim'
+hook_add = '''
+    let g:autodate_keyword_pre = 'Modified:'
+    let g:autodate_keyword_post = '\.'
+    let g:autodate_format = '%Y-%m-%d'
+    let g:autodate_lines = 10
+    let g:autodate_start_line = 1
+'''
+
+[[plugins]]
 repo = 'cespare/vim-toml'
 
 [[plugins]]
