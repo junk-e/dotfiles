@@ -1,0 +1,45 @@
+snippet     MIT_license_header_full
+abbr        The full header of MIT license
+alias       MIT_FULL
+options     head
+	${1:#:COMMENT}-------------------------------------------------------------------------------
+	$1 ${2:filename} --- ${3:description}
+	$1
+	$1 Copyright (c) 2020 Jun Kato All Rights Reserved.
+	$1 Author: Jun Kato (junk-e) <junk05301996@gmail.com>
+	$1 URL: https://github.com/junk-e
+	$1 License: This software is released under the MIT License, see LICENSE.txt.
+	$1 Modified: .
+	$1-------------------------------------------------------------------------------
+
+	${0}
+
+snippet     MIT_license_header_excerpt
+abbr        The excerpt header of MIT license
+alias       MIT_MINI
+options     head
+	${1:#:COMMENT}-------------------------------------------------------------------------------
+	$1 ${2:filename}
+	$1
+	$1 Author: Jun Kato (junk-e) <junk05301996@gmail.com>
+	$1 License: This software is released under the MIT License, see LICENSE.txt.
+	$1 Modified: .
+	$1-------------------------------------------------------------------------------
+
+	${0}
+
+snippet     header1
+abbr        General header1
+options     head
+	${1:#:COMMENT} ${2:#:HEADER} $1{{{
+	$1-------------------------------------------------------------------------------
+	${0}
+	$1}}}
+
+snippet     header2
+abbr        General header2
+options     head
+	${1:#:COMMENT} ${2:#:HEADER} $1{{{
+	$1---------------------------------------
+	${0}
+	$1}}}
