@@ -31,7 +31,7 @@ function ginit
     git init
     touch .gitignore
     git add .gitignore
-    git commit -m "[INIT] Initialize repository"
+    git commit -m "[INIT] Initial commit"
 end
 
 function glg
