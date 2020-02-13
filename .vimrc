@@ -50,6 +50,10 @@ endif
 filetype plugin indent on
 syntax enable
 
+" Colorscheme
+set termguicolors
+colorscheme identity
+
 set encoding=utf-8                              " Open files as UTF-8
 scriptencoding utf-8                            " Encodig for multibyte
 set fileencoding=utf-8                          " Save files as UTF-8

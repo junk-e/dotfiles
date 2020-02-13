@@ -29,3 +29,5 @@ hook_add = '''
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+[[plugins]]
+repo = 'junk-e/identity.vim'
