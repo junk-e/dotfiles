@@ -55,7 +55,7 @@ scriptencoding utf-8                            " Encodig for multibyte
 set fileencoding=utf-8                          " Save files as UTF-8
 set fileencodings=utf-8,ucs-boms,euc-jp,cp932   " Auto detection when reading
 set fileformats=unix,dos,mac                    " Line feed code
-set ambiwidth=double                            " Prevent collapse of ¢¢ and ¡û
+set ambiwidth=single                            " Prevent collapse of ¢¢ and ¡û
 
 set nobackup                                    " Disable backup
 set nowritebackup                               " Disable backup
