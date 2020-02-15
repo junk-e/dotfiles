@@ -108,9 +108,9 @@ set foldcolumn=3
 
 " Storing folds
 aug storing_folds
-  au!
-  au BufWinLeave ?* mkview 1
-  au BufWinEnter ?* silent! loadview 1
+    au!
+    au BufWinLeave ?* mkview 1
+    au BufWinEnter ?* silent! loadview 1
 aug END
 
 " Delete unnecessary spaces "{{{
