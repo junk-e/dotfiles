@@ -37,3 +37,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'junk-e/identity.vim'
+
+[[plugins]]
+repo = 'icymind/NeoSolarized'
