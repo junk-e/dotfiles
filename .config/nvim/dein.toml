@@ -33,9 +33,31 @@ hook_add = '''
     set laststatus=2
     set noshowmode
     let g:lightline = {
+    \    'active': {
+    \        'left': [['mode', 'paste'], ['readonly', 'filename']],
+    \        'right': [['lineinfo', 'percent'], ['fileformat', 'filencoding', 'filetype']]
+    \    },
+    \    'component_function': {
+    \        'filename': 'LightLineFileNameWithParentDir'
+    \    },
     \    'colorscheme': 'identity',
     \    'subseparator': { 'left': "\u2502", 'right': "\u2502" }
     \}
+
+    function! LightLineFileNameWithParentDir()
+        let modified = &modified ? ' +' : ''
+        if expand('%:t') ==# ''
+            let filename = '[No Name]'
+        else
+            let dirfiles = split(expand('%:p'), '/')
+            if len(dirfiles) < 2
+                let filename = dirfiles[0]
+            else
+                let filename = dirfiles[-2] . '/' . dirfiles[-1]
+            endif
+        endif
+        return filename . modified
+    endfunction
 '''
 
 [[plugins]]
