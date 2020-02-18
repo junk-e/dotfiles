@@ -113,6 +113,9 @@ aug storing_folds
     au BufWinEnter ?* silent! loadview 1
 aug END
 
+" Prevent saving local options (etc. setl readonly) in view file
+set viewoptions-=options
+
 " Delete unnecessary spaces "{{{
 aug deleteSpaces
     au!
