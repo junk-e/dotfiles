@@ -18,6 +18,15 @@ repo = 'cespare/vim-toml'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
+repo = 'cohama/lexima.vim'
+hook_add = '''
+    call lexima#add_rule({'char': '<C-l>', 'at': '\%#)', 'leave': 1})
+    call lexima#add_rule({'char': '<C-l>', 'at': '\%#"', 'leave': 1})
+    call lexima#add_rule({'char': '<C-l>', 'at': '\%#]', 'leave': 1})
+    call lexima#add_rule({'char': '<C-l>', 'at': '\%#}', 'leave': 1})
+'''
+
+[[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = '''
     let g:indentLine_char = '│'
@@ -59,6 +68,7 @@ hook_add = '''
         return filename . modified
     endfunction
 '''
+
 
 [[plugins]]
 repo = 'junk-e/identity.vim'
