@@ -173,3 +173,13 @@ nnoremap ZX :w<CR>
 inoremap ZX <ESC>:w<CR>
 
 nnoremap <silent> <ESC><ESC> :nohl<CR>
+
+" Tab page
+" Create new tab page
+nnoremap <silent>st <ESC>:tabnew<CR>
+" Move next tag
+nnoremap <silent>sl gt
+" Move previous tag
+nnoremap <silent>sh gT
+" Close buffer
+nnoremap <silent>sq <ESC>:bd<CR>
