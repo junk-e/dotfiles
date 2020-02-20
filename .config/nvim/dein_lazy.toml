@@ -32,3 +32,11 @@ hook_source = '''
     " Personal snippets directory
     let g:neosnippet#snippets_directory = '~/.config/nvim/snippets'
 '''
+
+[[plugins]]
+repo = 'alvan/vim-closetag'
+on_ft = ['html','xhtml','phtml','htmldjango']
+hook_source = '''
+    let g:closetag_filenames = '*'
+    let g:closetag_filetypes = '*'
+'''
