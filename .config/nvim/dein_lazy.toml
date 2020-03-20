@@ -40,3 +40,7 @@ hook_source = '''
     let g:closetag_filenames = '*'
     let g:closetag_filetypes = '*'
 '''
+
+[[plugins]]
+on_ft = ['json']
+repo = 'elzr/vim-json'
