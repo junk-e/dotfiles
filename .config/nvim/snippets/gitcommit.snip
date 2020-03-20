@@ -18,6 +18,16 @@ abbr        Fix prefix
 options     head
 	[FIX] ${1}
 
+snippet     mod
+abbr        Mod prefix
+options     head
+	[MOD] ${1}
+
+snippet     tweak
+abbr        tweak prefix
+options     head
+	[MOD] Tweak ${1}
+
 snippet     remove
 abbr        Remove prefix
 options     head
@@ -52,6 +62,16 @@ snippet     dotFix
 abbr        Fix prefix for dotfiles
 options     head
 	[${1}][FIX] ${2}
+
+snippet     dotMod
+abbr        Mod prefix for dotfiles
+options     head
+	[${1}][MOD] ${2}
+
+snippet     dotTweak
+abbr        Tweak prefix for dotfiles
+options     head
+	[${1}][MOD] Tweak ${2}
 
 snippet     dotRemove
 abbr        Remove prefix for dotfiles
