@@ -156,8 +156,8 @@ let g:tex_conceal=''                            " Disable conceal in TeX
 
 " Display invisible characters
 set list
-set listchars=tab:\|-,nbsp:%
-
+set listchars=tab:>-,nbsp:%
+"ив
 " key mappings
 " Disable macros
 nnoremap q <Nop>
